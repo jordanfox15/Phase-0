@@ -1,0 +1,75 @@
+html {
+  background-color: #ffffff;
+}
+body {
+    color: #000080;
+}
+a:link {
+    color:#800080;
+}
+a:visited {
+    color: #ff0000;
+}
+#subheading{
+	text-align:center;
+	width:200px;
+	height:80px;
+	margin:auto;
+} 
+
+#list1 {
+    float: left;
+}
+#list2 {
+    float:right;
+    margin-right:300px;
+}
+#header{
+ font-size:1em;
+ text-align: center;
+ margin:auto;
+}
+span{
+ font-size:2em;   
+}
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#geicoimage{
+	margin-top:10px;
+	margin:auto;
+	width:570px;
+	height:50px;
+	text-align: center;
+	font-size:13px;
+}
+#date{
+	font-size:.7em;
+}
+#line{
+	height:1px;
+	width:100%;
+	background-color: black;
+	display:block;
+}
+#line-2{
+	height:1px;
+	width:100%;
+	background-color: black;
+	display:block;
+	clear:both;
+}
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+- It is important to make sure the link to the external file is correct and accessible otherwise there will be no css formatting.
+What tricks did you use to help you with positioning?  How hard was it to get the site as you wanted it?
+- It was pretty difficult.  It took us a couple of hours to get a finished product and after we separated I made a few small tweaks on my own.  I think the biggest trick we used was float and clear to setup the list of links and the black line underneath.
+What CSS did you use to modify the element style (like size, color, etc.)?
+- We used color and font-size, using both px and em for different divisions we had.
+Did you modify the HTML to include classes or ids?  If so, which did you choose and why?  If you didn't, how would you know which one to add to your HTML?
+- We used quite a few ids.  We formated almost everything separately because when we were having trouble formating a specific block in reference to another and it wasn't working, we separated it with an id.  In one case we should have used class instead as we have 3 identical ids.
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+- The actual site definitely had cleaner code.  We were changing everything on the fly and we didn't pay too much attention to making sure elements were indented properly.  Also I saw that the actual site used a table for the list of links which would have been better than what we did.  Ours didn't line up 1:1 on the left and right and if you make the browser smaller the right side links moved to the bottom instead of staying to the right like on the actual site.
+*/
