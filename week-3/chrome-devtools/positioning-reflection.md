@@ -9,9 +9,9 @@
 ![](imgs/Release 3.4 - 9 freeplay.png)
 
 #How can you use Chrome's DevTools inspector to help you format or position elements?
-- The best thing I have found about Chrome's DevTools inspector is that you can make changes without affecting the source code and any formatting that is already placed you can check and uncheck to make it work and not make it work which helped a lot.
+The best thing I have found about Chrome's DevTools inspector is that you can make changes without affecting the source code and any formatting that is already placed you can check and uncheck to make it work and not make it work which helped a lot.
 #How can you resize element on the DOM using CSS?
-- The easiest way I found was to use the Height and Width commands.
+The easiest way I found was to use the Height and Width commands.
 #What are the differences between absolute, fixed, static, and relative positioning?  Which did you find easiest to use?  Which was most difficult?
 - Static position lays an element out in its current position in the flow.  The default setting for all elements.
 - Fixed position tells an element where to go relative to the screen.  Even when you scroll it will always be on screen.
