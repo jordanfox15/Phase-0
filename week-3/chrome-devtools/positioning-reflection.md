@@ -3,7 +3,7 @@
 ![](imgs/Release 3.4 - 3 Box Row.png)
 ![](imgs/Release 3.4 - 4 small box center.png)
 ![](imgs/Release 3.4 - 5 5em boxes.png)
-![](imgs/Release 3.4 - 6 footer box.png)
+![](imgs/Release 3.4 -  6 footer box.png)
 ![](imgs/Release 3.4 - 7 div 2 header.png)
 ![](imgs/Release 3.4 - 8 sidebar.png)
 ![](imgs/Release 3.4 - 9 freeplay.png)
