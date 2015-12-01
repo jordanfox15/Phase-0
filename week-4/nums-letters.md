@@ -12,3 +12,5 @@ puts 60 * 24 * 365 * 10
 
 https://github.com/jordanfox15/Phase-0/blob/master/week-4/defining-variables.rb
 
+https://github.com/jordanfox15/Phase-0/blob/master/week-4/simple-string.rb
+
