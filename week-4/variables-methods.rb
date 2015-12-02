@@ -6,7 +6,13 @@ puts "And what is your last name?"
 lname = gets.chomp
 puts "Your name is #{fname} #{mname} #{lname}."
 
+
 puts "What is your favorite number?"
 favnum = gets.chomp.to_i
 favnum += 1
 puts "I will posit that #{favnum} is a bigger better number."
+
+
+#https://github.com/jordanfox15/Phase-0/blob/master/week-4/address/my_solution.rb
+
+
