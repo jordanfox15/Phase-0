@@ -1,6 +1,6 @@
 # Shortest String
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # shortest_string is a method that takes an array of strings as its input
 # and returns the shortest string
@@ -12,5 +12,10 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  # Your code goes here!
+	string_length = Hash.new
+	list_of_words.each do |words|
+		string_length[words] = words.length
+	end
+	string_length[h.sort_by{|x, y| y}
+	return string_length.first
 end
