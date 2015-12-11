@@ -2,7 +2,7 @@
 
 # I worked on this challenge [with: Kevin Huang]
 
-# I spent [] hours on this challenge.
+# I spent [1.75] hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
