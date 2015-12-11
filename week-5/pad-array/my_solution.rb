@@ -89,3 +89,4 @@ How readable is your solution?  Did you and your pair choose descriptive variabl
 
 What is the difference between destructive and non-destructive methods in your own words.
 -Destructive methods change the original information passed to it, while non-destructive methods return altered information without changing the original.
+=end
