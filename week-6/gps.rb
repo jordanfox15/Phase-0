@@ -1,33 +1,29 @@
 # Your Names
 # 1) Jordan Fox
-# 2)
+# 2)David Louie
 
-# We spent [#] hours on this challenge.
+# We spent [1.25] hours on this challenge.
 
 # Bakery Serving Size portion calculator.
 
-def serving_size_calc(item_to_make, num_of_ingredients)
-  library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
-  error_counter = 3
+def serving_size_calc(item_to_make, num_of_servings)
+  menu = {"cookie" => 1, "cake" =>  5, "pie" => 7}
 
-  library.each do |food|
-    if library[food] != library[item_to_make]
-      error_counter += -1
-    end
-  end
-
-  if error_counter > 0
+  if menu.has_key?(item_to_make)
+    serving_size = menu[item_to_make]
+    remaining_ingredients = num_of_servings - serving_size
+  else
     raise ArgumentError.new("#{item_to_make} is not a valid input")
   end
 
-  serving_size = library.values_at(item_to_make)[0]
-  remaining_ingredients = num_of_ingredients % serving_size
-
-  case remaining_ingredients
-  when 0
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
+  if remaining_ingredients >= 7
+    return "Calculations complete: Make #{num_of_servings / serving_size} of #{item_to_make}, you can make #{(remaining_ingredients / menu["pie"])} pie, #{(remaining_ingredients / menu["cake"])} cake or #{(remaining_ingredients / menu["cookie"])} cookies."
+  elsif remaining_ingredients >= 5
+    return "Calculations complete: Make #{num_of_servings / serving_size} of #{item_to_make}, you can make #{(remaining_ingredients / menu["cake"])} cake or #{(remaining_ingredients / menu["cookie"])} cookies."
+  elsif remaining_ingredients >= 1
+    return "Calculations complete: Make #{num_of_servings / serving_size} of #{item_to_make}, you can make #{(remaining_ingredients / menu["cookie"])} cookies."
   else
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+    return "Calculations complete: Make #{num_of_servings / serving_size} of #{item_to_make}"
   end
 end
 
@@ -40,4 +36,18 @@ p serving_size_calc("cookie", 10)
 p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+=begin
 
+What did you learn about making code readable by working on this challenge?
+-Don't make things more complicated then they need to be and name your variables properly.
+
+Did you learn any new methods? What did you learn about them?
+-I learned has_key?.  I would have assumed there was a method to do this but I have not used it before.
+
+What did you learn about accessing data in hashes?
+-Besides the new method to do so, not much.
+
+What concepts were solidified when working through this challenge?
+-I have a better understanding of what to look for when refactoring.
+
+=end
