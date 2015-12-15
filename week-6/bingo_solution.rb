@@ -53,6 +53,7 @@ class BingoBoard
   end
 
   def display
+    p @letters
     for row in 0..4
     p @bingo_board[row]
     end
@@ -74,22 +75,31 @@ new_game = BingoBoard.new(board)
 
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
+puts
 new_game.check(new_game.call)
 new_game.display
 
@@ -116,3 +126,5 @@ How did you determine what should be an instance variable versus a local variabl
 
 What do you feel is most improved in your refactored solution?
 -Well my style is to refactor as I go sort-of.  I needed the .index method to make my pseudocode solution work but I didn't know what it was so I went and found it.
+
+=end
