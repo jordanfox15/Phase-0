@@ -226,3 +226,4 @@ When refactoring virus_effects, what stood out to you about the variables, if an
 
 What concept did you most solidify in this challenge?
 -I missed things to refactor because there were a few things I would have expected anyone to do from the beginning and didn't see the problems.
+=end
