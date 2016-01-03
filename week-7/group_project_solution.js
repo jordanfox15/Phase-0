@@ -28,3 +28,40 @@ C.
 		b. Divide total by 2 to get the average
 		c. Return the average
 */
+
+
+function sum(integers) {
+  var total = 0
+  for (var i = 0; i < integers.length; i++) {
+    total += integers[i];
+  };
+  return total;
+};
+/*
+As a user, I want to create a function called "sum" which will take a group of numbers, add them all together, and give me back the total.
+*/
+
+function mean(integers) {
+  var total = 0
+  for (var i = 0; i < integers.length; i++) {
+    total += integers[i];
+  };
+  return total/integers.length;
+};
+/*
+As a user, I want to create a function called "mean" which will take a group of numbers and give me back the average of them all.
+*/
+
+function median(integers) {
+  integers.sort(function(a,b) {return a - b});
+
+  var middle = Math.floor(integers.length / 2);
+
+  if (integers.length % 2 !== 0) {
+    return integers[middle];
+  };
+  return (integers[middle - 1] + integers[middle]) / 2.0;
+};
+/*
+As a user, I want to create a function called "median" which will take a group of numbers and give me back the mean of the group.
+*/
