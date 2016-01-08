@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge [by with: H. Edward Glenn]
+This challenge took me [.75] hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -19,15 +19,33 @@ var scores = [ [80, 70, 70, 100],
 
 
 
-
 // __________________________________________
 // Write your code below.
+var gradebook = {};
+gradebook["Joseph"] = {};
+gradebook["Susan"] = {};
+gradebook["William"] = {};
+gradebook["Elizabeth"] = {};
+gradebook["Joseph"].testScores = scores[0];
+gradebook["Susan"].testScores = scores[1];
+gradebook["William"].testScores = scores[2];
+gradebook["Elizabeth"].testScores = scores[3];
 
+gradebook.addScore = function(name, score){
+  gradebook[name].testScores.push(score);
+};
 
+gradebook.getAverage = function(name){
+  return average(gradebook[name].testScores)
+};
 
-
-
-
+function average(int_arr){
+  var total = 0;
+  for (var i =0; i < int_arr.length; i++){
+    total += int_arr[i]
+  };
+  return total / int_arr.length;
+};
 
 
 // __________________________________________
@@ -42,15 +60,18 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Reflect
+/*
 
+What did you learn about adding functions to objects?
+-That it works pretty much like adding anything else to them.
 
+How did you iterate over nested arrays in JavaScript?
+-Use multiple loops.
 
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+-No.
 
-
-
-
-
-
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
