@@ -1,1 +1,1 @@
-![](imgs/1 to 1.png)
+![](images/1 to 1.png)
