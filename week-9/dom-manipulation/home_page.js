@@ -1,7 +1,7 @@
 // DOM Manipulation Challenge
 
 
-// I worked on this challenge [with: Peter ].
+// I worked on this challenge [with: Peter Lowe].
 
 
 // Add your JavaScript calls to this page:
@@ -36,3 +36,13 @@ for (var i = 0; i < changeFont.length; i++){
 // Release 5:
 var hide = document.getElementById("hidden");
 document.body.appendChild(hide.content.cloneNode(true));
+
+/* Reflections
+
+What did you learn about the DOM?
+-That it can be altered not just by simple commands but through coding using variable, iteration and probably much more.
+
+What are some useful methods to use to manipulate the DOM?
+-Well accessing the part of the DOM you want to change has to be the most important method used.  So all the getElement methods.
+
+*/
