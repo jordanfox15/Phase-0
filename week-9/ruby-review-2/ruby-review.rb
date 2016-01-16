@@ -121,6 +121,6 @@ What is still confusing to you about Ruby?
 -The 2 classes interacting and how they related to each other and what was actually stored in the array.
 
 What are you going to study to get more prepared for Phase 1?
--Class
+-Classes
 
 =end
